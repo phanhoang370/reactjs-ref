@@ -1,0 +1,22 @@
+.no-print { display: none; }
+
+#ifmcontentstoprint{
+    height: 0px; width: 0px; position: absolute;
+}
+.form-qrcode {
+    text-align: center;
+}
+#qrcode-main svg {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0em 0 #000;
+}
+.qrcode2 {
+    bottom: 1px;
+    top: auto;
+    right: 128px;
+    position: absolute;
+}
+/*#qrcode-main {*/
+    /*float:right;*/
+/*}*/

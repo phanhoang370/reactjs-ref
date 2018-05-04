@@ -1,0 +1,53 @@
+.margin0 {
+    margin:0 !important;
+    width: 35px;
+    display:inline-block !important;
+}
+.inline-block {
+    display:inline-block !important;
+}
+.radio-group {
+    margin-right: 20px;
+}
+.right {
+    float: right;
+}
+.store-register .content-address .postal-code input {
+    display: inline-block;
+}
+.store-register .content-address .postal-code button {
+    display: inline-block;
+}
+.store-register .content-address .input-group-append button{
+    padding: 3px 15px;
+    margin-left: 5px;
+}
+.title-address {
+    /*padding-top: 25px;*/
+}
+.react-autosuggest__input {
+    height: 32px !important;
+    background-color: #f5f5f5;
+    border: 1px solid #ced4da;
+}
+.react-autosuggest__input:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+@media only screen and (max-width: 768px) {
+    .main-image {
+        float: left;
+        width: 50%;
+    }
+    .title-address {
+        padding-top: 10px;
+    }
+}

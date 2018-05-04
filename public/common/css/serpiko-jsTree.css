@@ -1,0 +1,28 @@
+/************************************************************************************************************************
+ * 
+ * serpiko-jsTree.css
+ *
+ * v1.0.2
+ * 
+ * jstree라이브러리에서 각 li a 폰트색상과 hover색을 오버라이딩 등
+ *
+ * author: 허정진 aka. serpiko
+ *	
+ * update: 2016.05.09
+ *
+ *************************************************************************************************************************/ 
+
+@charset "utf-8";
+
+/* 서치, 오버, 클릭 - 색상 */
+div.jstree ul li a.jstree-search {color:#FFCC00;} /*노랑*/
+div.jstree ul li a.jstree-hovered{color:#000;} /*빨강*/
+div.jstree ul li a.jstree-clicked{color:#000;} /*검정*/
+
+/* li의 i 태그 normal, critical 클래스 부여시 - 녹색: a0d428, 핑크: f17a7a */
+div.jstree ul li.normal a i{color:#FFF;} 
+div.jstree ul li.critical a i{color:#f17a7a;}
+
+/* li의 a 오버했을때 i 태그도 색상을 검정색으로 바뀌게 한다 */
+div.jstree ul li.normal a:hover i{color:#000;} 
+div.jstree ul li.critical a:hover i{color:#000;}

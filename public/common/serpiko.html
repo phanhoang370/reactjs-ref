@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+	<meta charset="utf-8">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<meta name="description" content="serpiko's HTML5 Template ver 1.00" />
+	<meta name="author" content="serpiko@hanmail.net ( http://serpiko.tistory.com )" />
+	
+	<link rel="shortcut icon" href="common/images/favicon.ico">
+	<link rel="apple-touch-icon" href="common/images/apple-touch-icon.png">
+	
+	<script src="js/ie/html5shiv.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../common/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../common/css/serpiko-common.css" />
+	
+	<style>
+		a, a:link, a:visited{color:#0F6191}
+		a:hover{color:red}
+		.size-xs{width:60px;}
+		[class*='bg-']{color:#fff;}
+
+		.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th{
+			vertical-align: middle;
+		}
+	</style>
+
+	<title>serpiko AIOP (All In One Package)</title>
+</head>
+
+<body id='serpiko_info' class='p-10'>
+
+	<div id="wrap">
+
+		<header class='m-b-35'>
+			<h3>serpiko-info.json : <time id='update'>0000-00-00</time></h3>
+		</header>
+		
+		<div class='container-fluid m-b-15'>
+			<h4>CSS</h4>
+			<table class='table table-bordered table-striped table-hover'>
+				<thead>
+					<tr>
+						<th>명칭</th>
+						<th>버전</th>
+						<th>용도</th>
+						<th>출처</th>
+						<th>경로</th>
+						<th class='size-xs'>사용</th>
+					</tr>
+				</thead>
+				<tbody id="css">
+				</tbody>
+			</table>
+		</div>
+		
+		<div class='container-fluid m-b-15'>
+			<h4>PURE JAVASCRIPT</h4>
+			<table class='table table-bordered table-striped table-hover'>
+				<thead>
+					<tr>
+						<th>명칭</th>
+						<th>버전</th>
+						<th>용도</th>
+						<th>출처</th>
+						<th>경로</th>
+						<th class='size-xs'>사용</th>
+					</tr>
+				</thead>
+				<tbody id='js'>
+				</tbody>
+			</table>
+		</div>
+
+		<div class='container-fluid m-b-15'>
+			<h4>jquery</h4>
+			<table class='table table-bordered table-striped table-hover'>
+				<thead>
+					<tr>
+						<th>명칭</th>
+						<th>버전</th>
+						<th>용도</th>
+						<th>출처</th>
+						<th>경로</th>
+						<th class='size-xs'>사용</th>
+					</tr>
+				</thead>
+				<tbody id='jquery'>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class='container-fluid m-b-15'>
+			<h4>JSON</h4>
+			<table class='table table-bordered table-striped table-hover'>
+				<thead>
+					<tr>
+						<th>명칭</th>
+						<th>버전</th>
+						<th>용도</th>
+						<th>출처</th>
+						<th>경로</th>
+						<th class='size-xs'>사용</th>
+					</tr>
+				</thead>
+				<tbody id='json'>
+				</tbody>
+			</table>
+		</div>
+
+		<div class='container-fluid m-b-15'>
+			<h4>FRAMEWORK</h4>
+			<table class='table table-bordered table-striped table-hover'>
+				<thead>
+					<tr>
+						<th>명칭</th>
+						<th>버전</th>
+						<th>용도</th>
+						<th>출처</th>
+						<th>경로</th>
+						<th class='size-xs'>사용</th>
+					</tr>
+				</thead>
+				<tbody id='framework'>
+				</tbody>
+			</table>
+		</div>
+
+		<div class='container-fluid m-b-15'>
+			<h4>PHP</h4>
+			<table class='table table-bordered table-striped table-hover'>
+				<thead>
+					<tr>
+						<th>명칭</th>
+						<th>버전</th>
+						<th>용도</th>
+						<th>출처</th>
+						<th>경로</th>
+						<th class='size-xs'>사용</th>
+					</tr>
+				</thead>
+				<tbody id='php'>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<!-- script -->
+	<script src="../common/js/jquery/jquery.min.js"></script>
+	<script src="../common/js/serpiko/ajax/sendRequest-ajax.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		//////////////////////////////
+
+			var xhrClass = new XhrClass;
+		
+			//url과 parameter 입력
+			var url = "../common/serpiko.info.json";
+			var param = "";
+
+			//class의 sendRequest메서드를 사용하여 XMLHTTPRequest를 호출.
+			xhrClass.sendRequest(url, param, complete, 'json');
+			function complete(xhr, res)
+			{
+				var ud = res[0].update;
+				$("#update").text( ud );
+
+				renderTbody(res, 1, "css");
+				renderTbody(res, 2, "js");
+				renderTbody(res, 3, "jquery");
+				renderTbody(res, 4, "json");
+				renderTbody(res, 5, "framework");
+				renderTbody(res, 6, "php");
+			}
+
+			function renderTbody($res, $idx, $categoty){
+				var tbody = "";
+				var len = $res[$idx][$categoty].length;
+
+				for(var i=0; i<len; i++){
+					
+					var row = $res[$idx][$categoty][i];
+
+					var name = row.name;
+					var desc = row.desc;
+					var ver = row.ver;
+					var source = row.source;
+					var folder = row.folder;
+					var necessary = row.necessary;
+					necessary ? necessary = "O" : necessary = "X";
+
+					var bgClass = "";
+					if( necessary == "O" ) bgClass = "bg-green3";
+					else bgClass= "bg-red2";
+
+					tbody += "<tr>";
+					tbody += "<td>"+name+"</td>";
+					tbody += "<td>"+ver+"</td>";
+					tbody += "<td>"+desc+"</td>";
+					tbody += "<td>"+source+"</td>";
+					tbody += "<td>"+folder+"</td>";
+					tbody += "<td class='text-center "+bgClass+"'>"+necessary+"</td>";
+					tbody += "</tr>";
+				}
+
+				$("#"+$categoty).html( tbody );
+
+			}
+			
+			
+
+			var xhrClass2 = new XhrClass;
+		
+			//url과 parameter 입력
+			var url = "../common/serpiko.demo.php";
+			var param = "Act=test";
+
+			//class의 sendRequest메서드를 사용하여 XMLHTTPRequest를 호출.
+			xhrClass2.sendRequest(url, param, complete2, 'json');
+			function complete2(xhr, res)
+			{
+				console.log( res.name, res.lib );
+			}
+
+
+		//////////////////////////////
+		});	//end. rdy
+	</script>
+</body>
+</html>

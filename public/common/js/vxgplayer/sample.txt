@@ -1,0 +1,204 @@
+<?
+
+//
+$CONN or exit("\$CONN 연결오류"); // $CONN validate
+$DEVID = $seq; // $DEVID ex) 24
+
+//
+$sql = "SELECT CONINFO FROM INFO_DEVICE WHERE DEVID = $DEVID";
+$row = mysql_fetch_assoc( mysql_query( $sql, $CONN ) );
+$url = $row['CONINFO'];
+
+//
+//var_dump( $DEVID, $url );
+
+?>
+
+<!--
+//////////////////////////////////////////////////////////////////////////////////////////
+*
+* pop_header.html
+*
+//////////////////////////////////////////////////////////////////////////////////////////
+<html>
+<body>
+<div id='wrap'>
+<div id='section'>
+<div class='main-container'>
+-->
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./common/css/vxgplayer-1.8.23.min.css" />
+
+<div class="content-absolute">
+	<div class="content">
+		<h1>CCTV</h1>
+		<!-- <input id="url_input" type="hidden" size="60" value="rtsp://admin:infra911@119.195.140.165:555/"> -->
+		<input id="url_input" type="hidden" size="60" value="<?=$url?>">
+		<div id="runtimePlayers">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!--
+//////////////////////////////////////////////////////////////////////////////////////////
+*
+* footer.html
+*
+//////////////////////////////////////////////////////////////////////////////////////////
+</div> / main-container
+</div> /section
+</div> /wrap
+-->
+<?
+	include_once "./".$Config["Template"]."/include/pop_footer.html";
+	//include_once "./".$Config["Template"]."/include/under_js.html";
+	//include_once "./".$Config["Template"]."/js/aside_build.html";
+?>
+
+
+<script type='text/javascript' src='common/js/jquery/jquery.min.js'></script>
+<script type='text/javascript' src='common/js/vxgplayer/vxgplayer-1.8.23.min.js'></script>
+<script type='text/javascript' src='common/js/serpiko/utils/Browser.js'></script>
+
+<script>
+$(function(){
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// 2017.03.08 허정진 추가
+	var browser = new Browser(),
+		myBrowserName = browser.getType(),
+		myBrowserIsExplorer = browser.isIE(),
+		myBrowserIsMobile = browser.isMobile();
+	
+	//
+	console.group("Browser 객체 속성정보");
+		console.log( myBrowserName, myBrowserIsExplorer, myBrowserIsMobile );
+	console.groupEnd();
+	
+	//
+	var emptyElement,
+		rtsp,
+		debug = true; // 주의!!. 디버깅모드 이면 T / F
+	
+	//
+	// Mobile
+	if( myBrowserIsMobile ){
+
+		if( !debug ){
+
+			rtsp = document.getElementById('url_input').value; // 재생할수 없는 동영상이라고 표시됨. 코덱문제인지? - 2017.03.08
+
+		}else{
+
+			rtsp = "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov";
+			console.warn("current file is : [<?=basename(__FILE__)?>] 주의!!. 테스트 rtsp URL 적용중");
+
+		}
+
+		window.location.href = rtsp;
+
+	}else
+	// PC
+	{
+		createPlayer();
+	}
+	
+
+
+
+
+
+	//hljs.initHighlightingOnLoad();
+	var indexPlayer = 0;
+	function createPlayer(){
+
+		indexPlayer++;
+		var playerId = 'vxg_media_player' + indexPlayer;
+		var div = document.createElement('div');
+		div.setAttribute("id", playerId);
+		div.setAttribute("class", "vxgplayer");
+		var runtimePlayers = document.getElementById('runtimePlayers');
+		runtimePlayers.appendChild(div);
+
+		console.log('Player Created');
+		vxgplayer(playerId, {
+
+			url: '',
+			nmf_path: 'media_player.nmf',
+			nmf_src: 'pnacl/Release/media_player.nmf',
+			latency: 3000,
+			aspect_ratio_mode: 1,
+			autohide: 3,
+			controls: true,
+			avsync: true,
+			autoreconnect: 1
+
+		}).ready(function(){
+
+			console.log(' =>ready player '+playerId);
+			vxgplayer(playerId).src(document.getElementById('url_input').value);
+			vxgplayer(playerId).play();
+			console.log(' <=ready player '+playerId);
+		});
+
+	}
+	function removeLatestPlayer(){
+
+		if(indexPlayer > 1){
+			var playerId = 'vxg_media_player' + indexPlayer;
+			vxgplayer(playerId).dispose();
+			document.getElementById('vxg_media_player' + indexPlayer).remove();
+			indexPlayer--;
+		}
+
+	}
+	
+	function customDigitalZoomOn(){
+
+		vxgplayer('vxg_media_player1').custom_digital_zoom(true);
+		digzoom_on.style.display = "none";
+		digzoom_off.style.display = "";
+		digzoom_params.style.display = "";
+				
+	}
+	function customDigitalZoomOff(){
+
+		vxgplayer('vxg_media_player1').custom_digital_zoom(false);
+		digzoom_on.style.display = "";
+		digzoom_off.style.display = "none";
+		digzoom_params.style.display = "none";
+
+	}
+		
+	function setCustomDigitalZoom(){
+
+		try{
+			vxgplayer('vxg_media_player1').setCustomDigitalZoom(parseInt(digzoom_ratio.value,10), parseInt(digzoom_x.value,10), parseInt(digzoom_y.value,10))
+		}catch(e){
+			alert(e);
+		}
+
+	}
+	
+	function resetCustomDigitalZoom(){
+
+		vxgplayer('vxg_media_player1').setCustomDigitalZoom(100, 0, 0);
+
+	}
+	
+	//createPlayer();
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+});
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="map.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="map_areas.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="serial.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="TXN.csv" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233200000000" remote="131327233200000000" Dst="0" />
+<file name="serial.csv" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="MSFT.csv" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233200000000" remote="131327233200000000" Dst="0" />
+<file name="gauge.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="MSFT_events.csv" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="serial2.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233200000000" remote="131327233200000000" Dst="0" />
+<file name="pie.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="pie.csv" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="gantt.json" server="222.122.52.20//usr/local/infra911/IoT_ENERGY/" local="131327233190000000" remote="131327233190000000" Dst="0" />
+<file name="map_areas.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="serial2.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233200000000" remote="131363581020000000" Dst="0" />
+<file name="gauge.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="serial.csv" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="MSFT.csv" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233200000000" remote="131363581020000000" Dst="0" />
+<file name="pie.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="pie.csv" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="TXN.csv" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233200000000" remote="131363581020000000" Dst="0" />
+<file name="serial.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="gantt.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="map.json" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="MSFT_events.csv" server="123.108.176.24:2722//usr/local/infra911/NOTUSE_DISCOUNT/" local="131327233190000000" remote="131363581020000000" Dst="0" />
+<file name="map_areas.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707900000000" Dst="0" />
+<file name="serial2.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233200000000" remote="131477707900000000" Dst="0" />
+<file name="gauge.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707900000000" Dst="0" />
+<file name="serial.csv" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707900000000" Dst="0" />
+<file name="MSFT.csv" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233200000000" remote="131477707900000000" Dst="0" />
+<file name="pie.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707910000000" Dst="0" />
+<file name="pie.csv" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707910000000" Dst="0" />
+<file name="TXN.csv" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233200000000" remote="131477707910000000" Dst="0" />
+<file name="serial.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707910000000" Dst="0" />
+<file name="gantt.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707910000000" Dst="0" />
+<file name="map.json" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707910000000" Dst="0" />
+<file name="MSFT_events.csv" server="123.108.176.28//usr/local/infra911/SMARTBUS/" local="131327233190000000" remote="131477707920000000" Dst="0" />
+</dwsync>

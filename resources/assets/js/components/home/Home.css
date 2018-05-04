@@ -1,0 +1,23 @@
+.menu-link {
+    color: #fff!important;
+    text-decoration: none!important;
+}
+.map-list-left .background-item {
+    background-color: #ff4b83;
+}
+.map-list-left .background-item span {
+   color:#fff;
+}
+.map-list-left .item-title {
+    padding: 7px 15px;
+}
+.map-list-left .background-value {
+    background-color: #F3F3F3;
+    text-align: right;
+}
+.map-list-left table .thead-dark .title-top-store {
+margin:0;
+}
+.map-list-left table .thead-dark .backgournd-blue {
+    background-color: #2d3575;
+}

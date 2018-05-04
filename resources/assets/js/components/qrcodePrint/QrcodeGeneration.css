@@ -1,0 +1,17 @@
+.print-qrcodes {
+    text-align: center;
+}
+.print-qrcodes .main-qrcode svg {
+    width: 80px;
+    height: 80px;
+
+}
+.print-qrcodes .background-qrcode .main-qrcode{
+
+}
+.print-qrcodes .main-qrcode {
+
+    position: relative;
+    right: 27px;
+    top: 84px;
+}

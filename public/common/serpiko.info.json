@@ -1,0 +1,717 @@
+[
+	{
+		"_comment" : "통합 프레임워크 업데이트 적용 날짜",
+		"update": "2017. 03. 07"
+	},
+
+	{"css":
+		[
+			{
+				"name":	"animate.min.css", 
+				"desc":	"css3 keyframes 애니메이션 클래스 (MIT license)",
+				"ver":	"v3.5.1",
+				"source":	"http://daneden.github.io/animate.css/",
+				"folder" : "common/css/animate.css",
+				"necessary": true
+			},
+			{
+				"name":	"normalize.css", 
+				"desc":	"HTML 요소의 기본 스타일을 브라우저 간 일관성을 유지 (MIT License)",
+				"ver":	"v5.0.0",
+				"source":	"https://necolas.github.io/normalize.css/",
+				"folder" : "common/css/normalize.css",
+				"necessary": true
+			},
+			{
+				"name":	"font-awesome.css", 
+				"desc":	"폰트 아이콘 (Font: SIL OFL 1.1, CSS: MIT License)",
+				"ver":	"v4.7.0",
+				"source":	"http://fortawesome.github.io/Font-Awesome/",
+				"folder" : "common/css/font-awesome.min.css",
+				"necessary": true
+			},
+			{
+				"name":	"serpiko-common.css", 
+				"desc":	"css유틸",
+				"ver":	"v2.1.3",
+				"source":	"허정진 http://devel.primarynet.co.kr/xe/index.php?mid=FRONTEND",
+				"folder" : "common/css/serpiko-common.css",
+				"necessary": true
+			},
+			{
+				"name":	"jquery-jstree.css", 
+				"desc":	"jstree",
+				"ver":	"v3.3.3 ( 컬러풀한 jquery-default.css와 검은테마에 사용할 흰색 jquery-default-dark.css 버전이있다)",
+				"source":	"http://jstree.com/",
+				"folder" : "common/css/jquery-jstree.css",
+				"necessary": false
+			},
+			{
+				"name":	"serpiko-jsTree.css", 
+				"desc":	"jsTree 커스텀 plug-in(jstree의 li에 클래스부여)",
+				"ver":	"v1.0.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-jsTree.css",
+				"necessary": false
+			},
+			{
+				"name":	"serpiko-bootstrap.css", 
+				"desc":	"부트 스트랩 오버라이딩 (드롭다운 메뉴 속성, 애니메이션)",
+				"ver":	"v1.0.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-bootstrap.css",
+				"necessary": true
+			},
+			{
+				"name":	"serpiko-totop.css", 
+				"desc":	"totop 커스텀 (default 정의)",
+				"ver":	"v1.0.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-ui.totop.css",
+				"necessary": true
+			},
+			{
+				"name":	"serpiko-easypiechart.css", 
+				"desc":	"easypiechart 커스텀 (default 정의)",
+				"ver":	"v1.0.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-easypiechart.css",
+				"necessary": true
+			},
+			{
+				"name":	"serpiko-flexigrid.css", 
+				"desc":	"flexigrid 커스텀 (색상및 클래스 추가)",
+				"ver":	"v1.1.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-flexigrid.css",
+				"necessary": true
+			},
+			{
+				"name":	"serpiko-sparkline.css", 
+				"desc":	"sparkline 커스텀 (webkit-box-sizing: content-box)",
+				"ver":	"v1.0.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-sparkline.css",
+				"necessary": false
+			},
+			{
+				"name":	"serpiko-slideReveal.css", 
+				"desc":	"slideReveal 커스텀 (default 정의)",
+				"ver":	"v1.1.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-slideReveal.css",
+				"necessary": true
+			}
+			,
+			{
+				"name":	"jquery.mCustomScrollbar.css", 
+				"desc":	"malihu jquery custom scrollbar plugin",
+				"ver":	"Version: 3.1.5",
+				"source":	"http://manos.malihu.gr/jquery-custom-content-scroller",
+				"folder" : "common/css/jquery.mCustomScrollbar.css",
+				"necessary": true
+			}
+			,
+			{
+				"name":	"bootstrap-colorpicker.min.css", 
+				"desc":	"Bootstrap Colorpicker ( ../images/bootstrap-colorpicker로 경로수정되었다)",
+				"ver":	"version  2016-03-31",
+				"source":	"http://mjolnic.github.io/bootstrap-colorpicker/",
+				"folder" : "common/css/bootstrap-colorpicker.min.css",
+				"necessary": false
+			}
+			,
+			{
+				"name":	"bootstrap-colorpicker-plus.min.css", 
+				"desc":	"Bootstrap Colorpicker (css에서 z-index:9998 를 선언하였음)",
+				"ver":	"version  2016-03-31",
+				"source":	"http://mjolnic.github.io/bootstrap-colorpicker/",
+				"folder" : "common/css/bootstrap-colorpicker-plus.min.css",
+				"necessary": true
+			}
+			,
+			{
+				"name":	"select2.css", 
+				"desc":	"The jQuery replacement for select boxes",
+				"ver":	"version  4.0.3",
+				"source":	"https://select2.github.io/",
+				"folder" : "common/css/select2.min.css",
+				"necessary": false
+			},
+			{
+				"name":	"jquery.ui.rotatable.css", 
+				"desc":	"jquery-ui-rotatable",
+				"ver":	"v1.1.0",
+				"source":	"https://github.com/godswearhats/jquery-ui-rotatable",
+				"folder" : "common/css/jquery.ui.rotatable.css",
+				"necessary": true
+			},
+			{
+				"name":	"serpiko-rotatable.css", 
+				"desc":	"jquery-ui-rotatable 커스텀 (핸들 클래스추가)",
+				"ver":	"v1.0.2",
+				"source":	"허정진",
+				"folder" : "common/css/serpiko-rotatable.css",
+				"necessary": true
+			}
+
+		]
+	},
+	
+
+
+
+
+	{"js":
+		[
+			{
+				"name":	"sendRequest-ajax.js", 
+				"desc":	"자바스크립트 ajax 컨트롤러(GET,POST,파일전송)",
+				"ver":	"v2017.01.18",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/ajax/sendRequest-ajax.js",
+				"necessary" : true
+			},
+			{
+				"name":	"MakeChartData.js", 
+				"desc":	"차트용 데이터를 만든다",
+				"ver":	"2017.02.22",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/data/MakeChartData.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"GetRequestDate.js", 
+				"desc":	"날짜 요청 함수",
+				"ver":	"2017.02.19",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/date/GetRequestDate.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"SetSelectTagBindYear.js", 
+				"desc":	"셀렉트 태그에 연도를 생성해준다",
+				"ver":	"2017.03.07",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/date/SetSelectTagBindYear.js",
+				"necessary" : false
+			}
+			,
+			{
+				"name":	"GetExportFileName.js", 
+				"desc":	"파일네임 생성",
+				"ver":	"2017.02.27",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/file/GetExportFileName.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"MathUtils.js", 
+				"desc":	"array sum, array average, randomize, distance",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/math/MathUtils.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"GetRotationDegrees.js", 
+				"desc":	"element의 Degree를 알아낸다",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/math/GetRotationDegrees.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"openPopup.js", 
+				"desc":	"팝업오픈",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/popup/openPopup.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"NumberToSize.js", 
+				"desc":	"단위(unit)",
+				"ver":	"2017.02.20",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/unit/NumberToSize.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"Browser.js", 
+				"desc":	"브라우저 종류 판별, 모바일검사",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/Browser.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"color100.js", 
+				"desc":	"16진수 색상 100개, 16진수 색상 그라데이션 배열 두쌍 100개",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/color100.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"GetObjectLength.js", 
+				"desc":	"오브젝으의 개수를 얻는다",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/getObjectLength.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"GetParam.js", 
+				"desc":	"오브젝트 기반의 파라메터를 가공한다.",
+				"ver":	"2017.03.06",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/GetParam.js",
+				"necessary" : true
+			}
+			,
+
+			{
+				"name":	"GetSeparationStrTok.js", 
+				"desc":	"str 토큰 분리함수",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/GetSeparationStrTok.js",
+				"necessary" : true
+			},
+
+			{
+				"name":	"ItoStr.js", 
+				"desc":	"숫자에 0, 00 prefix",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/ItoStr.js",
+				"necessary" : true
+			},
+
+			{
+				"name":	"tooltip.js", 
+				"desc":	"부트스트랩 tooltip",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/tooltip.js",
+				"necessary" : true
+			},
+
+			{
+				"name":	"toTop.js", 
+				"desc":	"toTop 라이브러리 사용 함수",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/utils/toTop.js",
+				"necessary" : true
+			},
+			{
+				"name":	"holder.min.js", 
+				"desc":	"이미지 가로x세로 플레이스 홀더",
+				"ver":	"Version 2.9.0",
+				"source":	"http://imsky.github.io/holder/",
+				"folder" : "common/js/utils/holder.min.js",
+				"necessary" : false
+			},
+			{
+				"name":	"Moment.js", 
+				"desc":	"Parse, validate, manipulate, and display dates in JavaScript.",
+				"ver":	"version  2.15.1",
+				"source":	"http://momentjs.com/",
+				"folder" : "common/js/utils/moment-with-locales.min.js",
+				"necessary": true
+			},
+			{
+				"name":	"html5shiv.js", 
+				"desc":	"ie에서 html5",
+				"ver":	"HTML5 Shiv v3.7.3",
+				"source":	"https://github.com/aFarkas/html5shiv/tree/master/dist",
+				"folder" : "common/js/ie/html5shiv.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"html5shiv-printshiv.js", 
+				"desc":	"ie에서 html5 프린트",
+				"ver":	"HTML5 Shiv v3.7.3",
+				"source":	"https://github.com/aFarkas/html5shiv/tree/master/dist",
+				"folder" : "common/js/ie/html5shiv-printshiv.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"SmartEditor Basic 2.0", 
+				"desc":	"네이버 스마트 에디터",
+				"ver":	"2.3.10",
+				"source":	"",
+				"folder" : "common/js/SMART_EDITOR/js/HuskyEZCreator.js",
+				"necessary" : true
+			}
+
+		]
+	},
+	
+
+
+	{"jquery":
+		[
+			{
+				"name":	"jquery.min.js", 
+				"desc":	"제이쿼리 - 코드의 능률을 위해 IE8 이하 포기(첨단브라우저 지원)",
+				"ver":	"v3.1.1",
+				"source":	"http://jquery.com/",
+				"folder" : "common/js/jquery/jquery.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery-compact.min.js", 
+				"desc":	"제이쿼리 호환성 유지 버전(낮은성능)",
+				"ver":	"v1.12.3",
+				"source":	"http://jquery.com/",
+				"folder" : "common/js/jquery/jquery-compact.min.js",
+				"necessary" : false
+			},
+			{
+				"name":	"jquery-ui.js", 
+				"desc":	"제이쿼리 ui (해당 css의 images를 /images/jquery-ui 로 변경)",
+				"ver":	"v1.12.1",
+				"source":	"http://jqueryui.com/",
+				"folder" : "common/js/jquery/jquery-ui.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery.easing.1.3.js", 
+				"desc":	"제이쿼리 easing",
+				"ver":	"v1.3",
+				"source":	"http://gsgd.co.uk/sandbox/jquery/easing/",
+				"folder" : "common/js/jquery/jquery.easing.1.3.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery.serpiko.js", 
+				"desc":	"제이쿼리기반 통합 라이브러리및 유틸",
+				"ver":	"2016.10.27",
+				"source":	"허정진 http://devel.primarynet.co.kr/xe/index.php?mid=FRONTEND_JS",
+				"folder" : "common/js/jquery/jquery.serpiko.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery.fullscreen-min.js", 
+				"desc":	"제이쿼리 전체화면",
+				"ver":	"v1.1.5",
+				"source":	"https://github.com/kayahr/jquery-fullscreen-plugin",
+				"folder" : "common/js/jquery/jquery.fullscreen-min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"flexigrid.js", 
+				"desc":	"제이쿼리 flexigrid<br/>튜토리얼 url<br/>http://www.js-tutorials.com/javascript-tutorial/simple-example-use-jquery-flexigrid/<br/>http://www.kenthouse.com/blog/2009/07/fun-with-flexigrids/",
+				"ver":	"v1.1",
+				"source":	"https://github.com/paulopmx/Flexigrid",
+				"folder" : "common/js/jquery/flexigrid.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jstree.min.js", 
+				"desc":	"제이쿼리기반 tree",
+				"ver":	"v3.3.2",
+				"source":	"http://jstree.com/",
+				"folder" : "common/js/jquery/jstree.min.js",
+				"necessary" : false
+			},
+			{
+				"name":	"jquery.excelexport.min.js", 
+				"desc":	"제이쿼리기반 엑셀저장",
+				"ver":	"2016-06-26",
+				"source":	"https://github.com/battatech/battatech_excelexport",
+				"folder" : "common/js/jquery/jquery.excelexport.min.js",
+				"necessary" : false
+			},
+			{
+				"name":	"jquery.easypiechart.js", 
+				"desc":	"제이쿼리기반 easypiechart (주의!! 정진 기능커스텀 버전)",
+				"ver":	"v2.1.7",
+				"source":	"https://rendro.github.io/easy-pie-chart/",
+				"folder" : "common/js/jquery/jquery.easypiechart.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery.sparkline.min.js", 
+				"desc":	"제이쿼리기반 sparkline",
+				"ver":	"v2.1.2",
+				"source":	"http://omnipotent.net/jquery.sparkline/#s-about",
+				"folder" : "common/js/jquery/jquery.sparkline.min.js",
+				"necessary" : false
+			},
+			{
+				"name":	"jquery.mCustomScrollbar.concat.min.js", 
+				"desc":	"제이쿼리기반 스크롤바 jQuery custom content scroller",
+				"ver":	"v3.1.5",
+				"source":	"http://manos.malihu.gr/jquery-custom-content-scroller",
+				"folder" : "common/js/jquery/jquery.mCustomScrollbar.concat.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery.ui.totop.js", 
+				"desc":	"제이쿼리기반 totop",
+				"ver":	"v1.2",
+				"source":	"http://mattvarone.com/web-design/uitotop-jquery-plugin/",
+				"folder" : "common/js/jquery/jquery.ui.totop.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"jquery.contextMenu.min.js", 
+				"desc":	"컨텍스트메뉴 (주의!! jquery.ui.js 혹은 동봉된 jquery.ui.position.min.js를 먼저 인클루드 해야함, font에서 context-menu-icons들을 css에 링크)",
+				"ver":	"v2.2.5",
+				"source":	"http://swisnl.github.io/jQuery-contextMenu/",
+				"folder" : "common/js/jquery/jquery.contextMenu.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"jquery.slidereveal.min.js", 
+				"desc":	"사이드 레이어 슬라이드",
+				"ver":	"v1.1.2",
+				"source":	"http://nnattawat.github.io/slideReveal/",
+				"folder" : "common/js/jquery/jquery.slidereveal.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"jquery.touchSwipe.min.js", 
+				"desc":	"터치 스와이프",
+				"ver":	"version 1.6.18",
+				"source":	"https://github.com/mattbryson/TouchSwipe-Jquery-Plugin",
+				"folder" : "common/js/jquery/jquery.touchSwipe.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"bootstrap-colorpicker.min.js", 
+				"desc":	"bootstrap-colorpicker",
+				"ver":	"version  2016-03-31",
+				"source":	"http://zzzhan.github.io/bootstrap-colorpicker-plus/",
+				"folder" : "common/js/bootstrap/bootstrap-colorpicker.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"bootstrap-colorpicker-plus.min.js", 
+				"desc":	"bootstrap-colorpicker-plus",
+				"ver":	"version  2016-03-31",
+				"source":	"http://zzzhan.github.io/bootstrap-colorpicker-plus/",
+				"folder" : "common/js/bootstrap/bootstrap-colorpicker-plus.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"bootstrap-datepicker", 
+				"desc":	"Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.",
+				"ver":	"v1.7.0-dev",
+				"source":	"https://bootstrap-datepicker.readthedocs.io/en/latest/index.html",
+				"folder" : "common/js/bootstrap/bootstrap-datepicker.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"bootstrap-datetimepicker", 
+				"desc":	"Bootstrap-date time picker",
+				"ver":	"version : 4.17.46",
+				"source":	"http://eonasdan.github.io/bootstrap-datetimepicker/",
+				"folder" : "common/js/bootstrap/bootstrap-datetimepicker.min.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"select2.min.js", 
+				"desc":	"The jQuery replacement for select boxes",
+				"ver":	"version  4.0.3",
+				"source":	"https://select2.github.io/",
+				"folder" : "common/js/jquery/select2.min.js",
+				"necessary": false
+			},
+			{
+				"name":	"SelectBoxIt", 
+				"desc":	"SelectBoxIt allows you to replace ugly and hard to use HTML select boxes with gorgeous and feature rich drop downs",
+				"ver":	"version 3.8.1",
+				"source":	"http://gregfranko.com/jquery.selectBoxIt.js/index.html/",
+				"folder" : "common/js/jquery/jquery.selectBoxIt.min.js",
+				"necessary": false
+			},
+			{
+				"name":	"jQuery number plug-in", 
+				"desc":	"제이쿼리 number plug-in ( 숫자에 ,콤마를 표시한다 )",
+				"ver":	"v2.1.5",
+				"source":	"https://github.com/customd/jquery-number",
+				"folder" : "common/js/jquery/jquery.number.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"jquery.ui.rotatable.js", 
+				"desc":	"jquery-ui-rotatable.js",
+				"ver":	"v1.1.0",
+				"source":	"https://github.com/godswearhats/jquery-ui-rotatable",
+				"folder" : "common/js/jquery/jquery.ui.rotatable.js",
+				"necessary": true
+			}
+			,
+			{
+				"name":	"Transit", 
+				"desc":	"Super-smooth CSS transitions & transformations for jQuery",
+				"ver":	"v0.9.12",
+				"source":	"http://ricostacruz.com/jquery.transit/",
+				"folder" : "common/js/jquery/jquery.transit.min.js",
+				"necessary": true
+			},
+			{
+				"name":	"AnimateDegree.js", 
+				"desc":	"회전 애니메이션",
+				"ver":	"2016.10.27",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/animate/AnimateDegree.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"AnimateHover.js", 
+				"desc":	"animate.css를 기반으로한 hover 애니메이션",
+				"ver":	"2016.10.27",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/animate/AnimateHover.js",
+				"necessary" : true
+			}
+			,
+			{
+				"name":	"AnimateText.js", 
+				"desc":	"숫자 애니메이션",
+				"ver":	"2016.10.30",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/animate/AnimateText.js",
+				"necessary" : true
+			},
+			{
+				"name":	"ImageLoad.js", 
+				"desc":	"이미지 로더",
+				"ver":	"2017.02.27",
+				"source":	"허정진",
+				"folder" : "common/js/serpiko/image/ImageLoad.js",
+				"necessary" : true
+			}
+
+		]
+	},
+
+	{"json":
+		[
+			{
+				"name":	"serpiko.info.json", 
+				"desc":	"라이브러리 정보",
+				"ver":	"최상단 표기",
+				"source":	"허정진",
+				"folder" : "common/serpiko.info.json",
+				"necessary" : true
+			},
+			{
+				"name":	"serpiko.demo.php", 
+				"desc":	"ajax용 json 데모",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/serpiko.demo.php",
+				"necessary" : false
+			}
+		]
+	},
+
+
+	{"framework":
+		[
+			{
+				"name":	"bootstrap", 
+				"desc":	"부트스트랩",
+				"ver":	"v3.3.7",
+				"source":	"http://getbootstrap.com/ ",
+				"folder" : "common/js/bootstrap/bootstrap.min.js",
+				"necessary" : true
+			},
+			{
+				"name":	"Bootstrap v4.0.0-alpha.6", 
+				"desc":	"부트스트랩",
+				"ver":	"v4.0.0-alpha.6",
+				"source":	"https://v4-alpha.getbootstrap.com/getting-started/download/",
+				"folder" : "",
+				"necessary" : true
+			},
+			{
+				"name":	"amcharts", 
+				"desc":	"am차트",
+				"ver":	"Version 3.20.20 (January 17, 2017)",
+				"source":	"https://www.amcharts.com/",
+				"folder" : "common/js/amcharts/amcharts.js",
+				"necessary" : true
+			},
+			{
+				"name":	"highcharts", 
+				"desc":	"high차트",
+				"ver":	"v5.0.7",
+				"source":	"http://www.highcharts.com",
+				"folder" : "common/js/highcharts/highcharts.js",
+				"necessary" : false
+			}
+		]
+	},
+
+	{"php":
+		[
+			{
+				"name":	"library.php", 
+				"desc":	"기본 라이브러리",
+				"ver":	"v2016.10.20",
+				"source":	"허정진 http://devel.primarynet.co.kr/xe/index.php?mid=BACKEND",
+				"folder" : "common/php/primarynet/library.php",
+				"necessary" : true
+			},
+			{
+				"name":	"captcha", 
+				"desc":	"이미지 문자입력",
+				"ver":	"v2013",
+				"source":	"https://github.com/claviska/simple-php-captcha",
+				"folder" : "common/php/captcha/simple-php-captcha.php",
+				"necessary" : false
+			},
+			{
+				"name":	"PHP-MySQL-Session-Handler", 
+				"desc":	"PHP-MySQL 세션 핸들러",
+				"ver":	"v2015.9",
+				"source":	"https://github.com/sprain/PHP-MySQL-Session-Handler",
+				"folder" : "common/php/PHP-MySQL-Session-Handler/MySqlSessionHandler.php",
+				"necessary" : true
+			},
+			{
+				"name":	"PHPExcel", 
+				"desc":	"PHPExcel",
+				"ver":	"1.8.0, 2014-03-02",
+				"source":	"http://www.codeplex.com/PHPExcel",
+				"folder" : "common/php/excel/PHPExcel.php",
+				"necessary" : true
+			},
+			{
+				"name":	"color100", 
+				"desc":	"color100",
+				"ver":	"",
+				"source":	"허정진",
+				"folder" : "common/php/utils/color100.php",
+				"necessary" : false
+			}
+		]
+	}
+]

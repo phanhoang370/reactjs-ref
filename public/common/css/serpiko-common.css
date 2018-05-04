@@ -1,0 +1,779 @@
+/************************************************************************************************************************
+ * serpiko-common.css 
+ *
+ * v2.2.4
+ *
+ * MIT License | http://serpiko.tistory.com/
+ *
+ * author: 허정진 aka. serpiko
+ *	
+ * update: 2016.12.08
+ *
+ *
+ * 웹폰트 / 박스사이징(현재안씀) / 엘리먼트 기본값(현재안씀) / 패딩&마진 / 유틸 / 배경, 폰트, 그라데이션 배경 / 트랜지션
+ *
+ *
+ *
+ *
+ *************************************************************************************************************************/ 
+
+
+
+
+@charset "utf-8";
+
+
+
+/*
+############################################################################################################
+*
+*
+* WEB-FONT
+*
+*
+############################################################################################################
+*/
+
+
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ * @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+ * @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+ */
+/* 기본글꼴 : 나눔고딕 */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumGothic/NanumGothic-Regular.eot);
+  src: url(../fonts/NanumGothic/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+	   url(../fonts/NanumGothic/NanumGothic-Regular.woff2) format('woff2'),
+	   url(../fonts/NanumGothic/NanumGothic-Regular.woff) format('woff'),
+	   url(../fonts/NanumGothic/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumGothic/NanumGothic-Bold.eot);
+  src: url(../fonts/NanumGothic/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+	   url(../fonts/NanumGothic/NanumGothic-Bold.woff2) format('woff2'),
+	   url(../fonts/NanumGothic/NanumGothic-Bold.woff) format('woff'),
+	   url(../fonts/NanumGothic/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic exBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/NanumGothic/NanumGothic-ExtraBold.eot);
+  src: url(../fonts/NanumGothic/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+	   url(../fonts/NanumGothic/NanumGothic-ExtraBold.woff2) format('woff2'),
+	   url(../fonts/NanumGothic/NanumGothic-ExtraBold.woff) format('woff'),
+	   url(../fonts/NanumGothic/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+/* 영문글자 */
+@font-face {
+    font-family: 'open-sans-semibold';
+    src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans-light';
+    src: url('../fonts/open-sans/OpenSans-Light-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 두꺼운 영문글자 */
+@font-face {
+    font-family: 'Franklin Gothic Demi';
+    src: url('../fonts/FranklinGothic/Franklin Gothic Demi.eot');
+         url('../fonts/FranklinGothic/Franklin Gothic Demi.woff') format('woff'),
+         url('../fonts/FranklinGothic/Franklin Gothic Demi.TTF') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 특수문자 */
+/*
+@font-face {
+    font-family: 'ios7-icon';
+    src:
+        url('../fonts/icons/icon.woff') format('woff'),
+        url('../fonts/icons/icon.ttf') format('truetype'),
+        url('../fonts/icons/icon.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+
+/*
+############################################################################################################
+*
+*
+* box-sizing : border-box
+*
+*
+############################################################################################################
+*/
+
+/*
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+*/
+
+
+/*
+############################################################################################################
+*
+*
+* ELEMENT default
+*
+*
+############################################################################################################
+*/
+
+/*
+html {margin: 0px; padding: 0px;}
+body {margin: 0px; padding: 0px;}
+div {margin: 0px; padding: 0px;}
+h1 {margin: 0px; padding: 0px;}
+h2 {margin: 0px; padding: 0px;}
+h3 {margin: 0px; padding: 0px;}
+h4 {margin: 0px; padding: 0px;}
+h5 {margin: 0px; padding: 0px;}
+h6 {margin: 0px; padding: 0px;}
+ul {margin: 0px; padding: 0px;}
+ol {margin: 0px; padding: 0px;}
+li {margin: 0px; padding: 0px;}
+dl {margin: 0px; padding: 0px;}
+dt {margin: 0px; padding: 0px;}
+dd {margin: 0px; padding: 0px;}
+form {margin: 0px; padding: 0px;}
+fieldset {margin: 0px; padding: 0px;}
+p {margin: 0px; padding: 0px;}
+button {margin: 0px; padding: 0px;}
+table {margin: 0px; padding: 0px;}
+th {margin: 0px; padding: 0px;}
+td {margin: 0px; padding: 0px;}
+textarea{margin: 0px; padding: 0px;}
+div {margin: 0px; padding: 0px;}
+img {border: 0px; currentColor;}
+fieldset {border: 0px #CCC solid;}
+table {border: 0px currentColor;}
+li {list-style: none;}
+input {vertical-align: middle;}
+select {vertical-align: middle;}
+button {vertical-align: middle;}
+img {vertical-align: middle;}
+em {font-style: normal;}
+address {font-style: normal;}
+button {cursor: pointer;}
+label {cursor: pointer;}
+button {border: 0px currentColor; overflow: visible;}
+input{color: rgb(93, 90, 84); line-height:1.5; border:1px #CCC solid;font-weight: 400; background-color:#faf9f7; padding:5px;}
+textarea{line-height: 2; border:1px #CCC solid; padding:10px;}
+select {color: rgb(93, 90, 84); line-height: 1.5; font-weight: 400; height:25px; border:1px #CCC solid; padding:2px; background-color:#faf9f7;}
+button {color: rgb(93, 90, 84); line-height: 1.5; font-weight: 400;}
+th {color: rgb(64, 61, 57); font-weight: 600;}
+dt {color: rgb(64, 61, 57); font-weight: 600;}
+strong {color: rgb(64, 61, 57); font-weight: 600;}
+legend {width: 0px; height: 0px; line-height: 0; text-indent: -99999em; overflow: hidden; font-size: 0px; visibility: hidden; position: absolute;}
+caption {width: 0px; height: 0px; line-height: 0; text-indent: -99999em; overflow: hidden; font-size: 0px; visibility: hidden;}
+*/
+
+html { width: 100%; height: auto; }
+body { width: 100%; height: auto; }
+body { color: #555; font-size: 12px; font-family:"Nanum Gothic"; line-height:170%; }
+
+a {color: #FFF; text-decoration: none;}
+a:link {color: #FFF; text-decoration: none;}
+a:visited {color: #FFF; text-decoration: none;}
+a:active {color: #FFF; text-decoration: none;}
+a:hover {color: #FFD600; text-decoration: none;}
+
+
+
+/*
+############################################################################################################
+*
+*
+* Generics
+*
+*
+############################################################################################################
+*/
+
+/* Paddings */
+.p-0 { padding: 0 !important; }
+.p-5 { padding: 5px !important; }
+.p-10 { padding: 10px !important; }
+.p-15 { padding: 15px !important; }
+.p-20 { padding: 20px !important; }
+.p-25 { padding: 25px !important; }
+
+.p-t-0 { padding-top: 0 !important; }
+.p-t-5 { padding-top: 5px !important; }
+.p-t-10 { padding-top: 10px !important; }
+.p-t-15 { padding-top: 15px !important; }
+.p-t-20 { padding-top: 20px !important; }
+.p-t-25 { padding-top: 25px !important; }
+
+.p-b-0 { padding-bottom: 0 !important; }
+.p-b-5 { padding-bottom: 5px !important; }
+.p-b-10 { padding-bottom: 10px !important; }
+.p-b-15 { padding-bottom: 15px !important; }
+.p-b-20 { padding-bottom: 20px !important; }
+.p-b-25 { padding-bottom: 25px !important; }
+
+.p-l-0 { padding-left: 0 !important; }
+.p-l-5 { padding-left: 5px !important; }
+.p-l-10 { padding-left: 10px !important; }
+.p-l-15 { padding-left: 15px !important; }
+.p-l-20 { padding-left: 20px !important; }
+.p-l-25 { padding-left: 25px !important; }
+
+.p-r-0 { padding-right: 0 !important; }
+.p-r-5 { padding-right: 5px !important; }
+.p-r-10 { padding-right: 10px !important; }
+.p-r-15 { padding-right: 15px !important; }
+.p-r-20 { padding-right: 20px !important; }
+.p-r-25 { padding-right: 25px !important; }
+
+/* Margin */
+.m-0 { margin: 0 !important; }
+.m-5 { margin: 5px !important; }
+.m-10 { margin: 10px !important; }
+.m-15 { margin: 15px !important; }
+.m-20 { margin: 20px !important; }
+.m-25 { margin: 25px !important; }
+.m-30 { margin: 30px !important; }
+.m-35 { margin: 35px !important; }
+
+.m-t-0 { margin-top: 0 !important; }
+.m-t-5 { margin-top: 5px !important; }
+.m-t-10 { margin-top: 10px !important; }
+.m-t-15 { margin-top: 15px !important; }
+.m-t-20 { margin-top: 20px !important; }
+.m-t-25 { margin-top: 25px !important; }
+.m-t-30 { margin-top: 30px !important; }
+.m-t-35 { margin-top: 35px !important; }
+.m-t-40 { margin-top: 40px !important; }
+.m-t-50 { margin-top: 50px !important; }
+
+.m-b-0 { margin-bottom: 0 !important; }
+.m-b-5 { margin-bottom: 5px !important; }
+.m-b-10 { margin-bottom: 10px !important; }
+.m-b-15 { margin-bottom: 15px !important; }
+.m-b-20 { margin-bottom: 20px !important; }
+.m-b-25 { margin-bottom: 25px !important; }
+.m-b-30 { margin-bottom: 30px !important; }
+.m-b-35 { margin-bottom: 35px !important; }
+.m-b-40 { margin-bottom: 40px !important; }
+.m-b-50 { margin-bottom: 50px !important; }
+
+.m-l-0 { margin-left: 0 !important; }
+.m-l-5 { margin-left: 5px !important; }
+.m-l-10 { margin-left: 10px !important; }
+.m-l-15 { margin-left: 15px !important; }
+.m-l-20 { margin-left: 20px !important; }
+.m-l-25 { margin-left: 25px !important; }
+.m-l-30 { margin-left: 30px !important; }
+.m-l-35 { margin-left: 35px !important; }
+.m-l-40 { margin-left: 40px !important; }
+.m-l-50 { margin-left: 50px !important; }
+
+.m-r-0 { margin-right: 0 !important; }
+.m-r-5 { margin-right: 5px !important; }
+.m-r-10 { margin-right: 10px !important; }
+.m-r-15 { margin-right: 15px !important; }
+.m-r-20 { margin-right: 20px !important; }
+.m-r-25 { margin-right: 25px !important; }
+.m-r-30 { margin-right: 30px !important; }
+.m-r-35 { margin-right: 35px !important; }
+.m-r-40 { margin-right: 40px !important; }
+.m-r-50 { margin-right: 50px !important; }
+
+.p-absolute{ position:absolute !important;}
+.p-relative{ position:relative !important;}
+
+.d-inline{ display:inline !important;}
+.d-inline-block{ display:inline-block !important;}
+.d-block{ display:block !important;}
+
+
+
+
+
+/*
+############################################################################################################
+*
+*
+* utils
+*
+*
+############################################################################################################
+*/
+
+/* none : 제거 */
+.bg-none { background: none !important; }
+.t-s-none { text-shadow: none !important; }
+.b-s-none { box-shadow: none !important; }
+.bd-none { border: none !important; }
+
+
+/* nowarp : 한줄로 */
+.nowrap {white-space: nowrap !important;}
+
+
+/* overflow + Text */
+.o-hidden { overflow: hidden; }
+.o-visible { overflow: visible; }
+.o-auto { overflow: auto; }
+
+
+/* overflow:hidden + text-overflow: ellipsis */
+/*	사용 예)
+	<div style='border:1px solid red;width:100px;height:40px;'>
+		<p class='o-ellipsis' title='고기압의 영향으로 전국이 맑고 포근하겠습니다.'>고기압의 영향으로 전국이 맑고 포근하겠습니다.</p>
+	</div>
+*/
+.o-ellipsis { width: 97%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; float: left; }
+.o-ellipsis:after{ visibility: hidden; display: block; content: ""; clear: both; height: 0; }
+
+
+
+/* white 라인. 박스모델안에 패딩이 없으면 white-rel-line을, 있으면 white-abs-line을 쓴다. */
+.white-rel-line, .white-abs-line{
+	top:0;
+	left:0;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:1px;
+	border:1px solid rgba(255,255,255, 0.15);
+}
+.white-rel-line{ position: relative; }
+.white-abs-line{ position: absolute; }
+
+
+
+/*
+############################################################################################################
+*
+*
+* background-color
+*
+*
+############################################################################################################
+*/
+.bg-black{background-color:#000}
+
+.bg-gray{background-color:#e7e7e7}
+.bg-gray2{background-color:#adadad}
+.bg-gray3{background-color:#8e8e8e}
+.bg-gray4{background-color:#78818a}
+
+.bg-red{background-color:#b64439}
+.bg-red2{background-color:#e84040}
+
+.bg-pink{background-color:#f35957}
+.bg-pink2{background-color:#f8a4a2}
+.bg-pink3{background-color:#e38da2}
+
+.bg-blue{background-color:#514dfd}
+.bg-blue2{background-color:#0078bf}
+.bg-blue3{background-color:#5eb6e6}
+.bg-blue4{background-color:#e0ecf8}
+
+.bg-green{background-color:#2bb87a}
+.bg-green2{background-color:#07766d}
+.bg-green3{background-color:#0aa699}
+.bg-green4{background-color:#5fb61f}
+
+.bg-mint{background-color:#61c5c2}
+.bg-mint2{background-color:#a6dfd9}
+
+.bg-orange{background-color:#ff9a41}
+.bg-orange2{background-color:#f09709}
+
+.bg-cyan{background-color:#55c1e7}
+.bg-white{background-color:#FFF}
+
+.bg-yellow{background-color:#e6ca36}
+.bg-yellow2{background-color:#dfc11c}
+
+.bg-perple{background-color:#67568d} /* pink2 combie */
+
+.bg-brown{background-color:#c3a279}
+
+
+
+
+
+
+/*
+############################################################################################################
+*
+*
+* font-color
+*
+*
+############################################################################################################
+*/
+.font-red{color:#e84040}
+.font-green{color:#5fb61f}
+.font-yellow{color:#ecd715}
+.font-yellow2{color:#fae54c}
+.font-orange{color:#ff9a41}
+.font-silver{color:#b2b2b2}
+.font-gray{color:#8e8e8e}
+.font-white{color:#FFF}
+.font-perple{color:#67568d}
+.font-blue{color:#514dfd}
+
+
+/*
+############################################################################################################
+*
+*
+* gradient
+*
+*
+############################################################################################################
+*/
+.gradient-red{
+	border:1px solid #a51818;
+	background: #f54d4d; /* Old browsers */
+	background: -moz-linear-gradient(top, #f54d4d 0%, #c61c1d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f54d4d), color-stop(100%,#c61c1d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f54d4d 0%,#c61c1d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f54d4d 0%,#c61c1d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f54d4d 0%,#c61c1d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f54d4d 0%,#c61c1d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f54d4d', endColorstr='#c61c1d',GradientType=0 ); /* IE6-9 */
+}
+.gradient-yellow{
+	border:1px solid #c09d5a;
+	background: #e6ca36; /* Old browsers */
+	background: -moz-linear-gradient(top, #e6ca36 0%, #d8950d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6ca36), color-stop(100%,#d8950d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e6ca36 0%,#d8950d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e6ca36 0%,#d8950d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e6ca36 0%,#d8950d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e6ca36 0%,#d8950d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ca36', endColorstr='#d8950d',GradientType=0 ); /* IE6-9 */
+}
+.gradient-green{
+	border:1px solid #bac392;
+	background: #c8d959; /* Old browsers */
+	background: -moz-linear-gradient(top, #c8d959 0%, #85a117 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8d959), color-stop(100%,#85a117)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c8d959 0%,#85a117 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c8d959 0%,#85a117 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c8d959 0%,#85a117 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c8d959 0%,#85a117 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d959', endColorstr='#85a117',GradientType=0 ); /* IE6-9 */
+}
+.gradient-green2{
+	border:1px solid #07766D;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0aa699+0,07766d+50,07766d+50,07766d+100 */
+	background: #0aa699; /* Old browsers */
+	background: -moz-linear-gradient(top, #0aa699 0%, #07766d 50%, #07766d 50%, #07766d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0aa699), color-stop(50%,#07766d), color-stop(50%,#07766d), color-stop(100%,#07766d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #0aa699 0%,#07766d 50%,#07766d 50%,#07766d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #0aa699 0%,#07766d 50%,#07766d 50%,#07766d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #0aa699 0%,#07766d 50%,#07766d 50%,#07766d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #0aa699 0%,#07766d 50%,#07766d 50%,#07766d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0aa699', endColorstr='#07766d',GradientType=0 ); /* IE6-9 */
+}
+.gradient-cyan{
+	border:1px solid #3fb6f3;
+	background: rgb(105,210,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(105,210,255,1) 0%, rgba(29,162,227,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(105,210,255,1)), color-stop(100%,rgba(29,162,227,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(105,210,255,1) 0%,rgba(29,162,227,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(105,210,255,1) 0%,rgba(29,162,227,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(105,210,255,1) 0%,rgba(29,162,227,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(105,210,255,1) 0%,rgba(29,162,227,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2ff', endColorstr='#1da2e3',GradientType=0 ); /* IE6-9 */
+}
+.gradient-blue{
+	border:1px solid #066c9e;
+	background: rgb(11,149,214); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(11,149,214,1) 0%, rgba(11,149,214,1) 50%, rgba(6,129,197,1) 51%, rgba(6,129,197,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(11,149,214,1)), color-stop(50%,rgba(11,149,214,1)), color-stop(51%,rgba(6,129,197,1)), color-stop(100%,rgba(6,129,197,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(11,149,214,1) 0%,rgba(11,149,214,1) 50%,rgba(6,129,197,1) 51%,rgba(6,129,197,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(11,149,214,1) 0%,rgba(11,149,214,1) 50%,rgba(6,129,197,1) 51%,rgba(6,129,197,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(11,149,214,1) 0%,rgba(11,149,214,1) 50%,rgba(6,129,197,1) 51%,rgba(6,129,197,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(11,149,214,1) 0%,rgba(11,149,214,1) 50%,rgba(6,129,197,1) 51%,rgba(6,129,197,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b95d6', endColorstr='#0681c5',GradientType=0 ); /* IE6-9 */
+}
+.gradient-blue2{
+	border:1px solid #3d9cd4;
+	background: #67c5fb; /* Old browsers */
+	background: -moz-linear-gradient(top, #67c5fb 0%, #2f9fde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#67c5fb), color-stop(100%,#2f9fde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #67c5fb 0%,#2f9fde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #67c5fb 0%,#2f9fde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #67c5fb 0%,#2f9fde 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #67c5fb 0%,#2f9fde 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c5fb', endColorstr='#2f9fde',GradientType=0 ); /* IE6-9 */
+}
+.gradient-blue3{
+	color:#fff;
+	border:1px solid #336699;
+	background: #67c5fb; /* Old browsers */
+	background: -moz-linear-gradient(top, #67c5fb 0%, #2f9fde 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#67c5fb), color-stop(100%,#2f9fde)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #67c5fb 0%,#2f9fde 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #67c5fb 0%,#2f9fde 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #67c5fb 0%,#2f9fde 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6e8eba 0%,#38699c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c5fb', endColorstr='#2f9fde',GradientType=0 ); /* IE6-9 */
+}
+.gradient-lightblue{
+	border:1px solid #7591c9;
+	background: #a1caf0; /* Old browsers */
+	background: -moz-linear-gradient(top, #a1caf0 0%, #74a6da 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1caf0), color-stop(100%,#74a6da)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a1caf0 0%,#74a6da 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a1caf0 0%,#74a6da 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a1caf0 0%,#74a6da 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a1caf0 0%,#74a6da 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1caf0', endColorstr='#74a6da',GradientType=0 ); /* IE6-9 */
+}
+.gradient-pink{
+	border:1px solid #fd8c8c;
+	background: #febbbb; /* Old browsers */
+	background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#febbbb), color-stop(45%,#fe9090), color-stop(100%,#ff5c5c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 );
+	 /* IE6-9 */
+}
+.gradient-pink2{
+	border:1px solid #e15c88;
+	color:#fff;
+	background: #ed82a5; /* Old browsers */
+	background: -moz-linear-gradient(top, #ed82a5 0%, #e7608b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed82a5), color-stop(100%,#e7608b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ed82a5 0%,#e7608b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ed82a5 0%,#e7608b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ed82a5 0%,#e7608b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ed82a5 0%,#e7608b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed82a5', endColorstr='#e7608b',GradientType=0 ); /* IE6-9 */
+}
+.gradient-pink3{
+	color:#fff;
+	background: #f17979; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top, #f17979 0%, #ef5151 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f17979), color-stop(100%,#ef5151)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f17979 0%,#ef5151 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f17979 0%,#ef5151 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f17979 0%,#ef5151 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f17979 0%,#ef5151 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17979', endColorstr='#ef5151',GradientType=0 ); /* IE6-8 */
+}
+.gradient-gray{
+	color: #333 !important;
+	border:1px solid #DDD;
+	background-color: #F4F4F4;
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: -ms-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: -o-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: linear-gradient(top, #FFFFFF, #e8e8e8);
+}
+.gradient-gray2{
+	color: #333 !important;
+	border:1px solid #aaaaaa;
+	background-color: #F4F4F4;
+    background-image: -webkit-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: -moz-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: -ms-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: -o-linear-gradient(top, #FFFFFF, #e8e8e8);
+    background-image: linear-gradient(top, #FFFFFF, #e8e8e8);
+}
+.gradient-gray3{
+	color: #333 !important;
+	border:1px solid #DDD;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d1d1d1+100 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(209,209,209,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(209,209,209,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(209,209,209,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(209,209,209,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(209,209,209,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(209,209,209,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-9 */
+}
+.gradient-orange{
+	border:1px solid #F97F06;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb23f+0,ff9900+100 */
+	background: #ffb23f; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffb23f 0%, #ff9900 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb23f), color-stop(100%,#ff9900)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffb23f 0%,#ff9900 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffb23f 0%,#ff9900 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffb23f 0%,#ff9900 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffb23f 0%,#ff9900 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb23f', endColorstr='#ff9900',GradientType=0 ); /* IE6-9 */
+}
+.gradient-dark{
+	color:#FFF;
+    background-color: #666666;
+    background-image: -webkit-linear-gradient(top, #777777, #444444);
+    background-image: -moz-linear-gradient(top, #777777, #444444);
+    background-image: -ms-linear-gradient(top, #777777, #444444);
+    background-image: -o-linear-gradient(top, #777777, #444444);
+    background-image: linear-gradient(top, #777777, #444444);
+}
+
+.gradient-dark2{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#969ea0+0,83878a+100 */
+background: #969ea0; /* Old browsers */
+background: -moz-linear-gradient(top,  #969ea0 0%, #83878a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #969ea0 0%,#83878a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #969ea0 0%,#83878a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969ea0', endColorstr='#83878a',GradientType=0 ); /* IE6-9 */
+
+}
+
+.gradient-brown{
+	border:1px solid #BC6400;
+	* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c3a279+0,bf853f+100 */
+	background: #c3a279; /* Old browsers */
+	background: -moz-linear-gradient(top, #c3a279 0%, #bf853f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3a279), color-stop(100%,#bf853f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c3a279 0%,#bf853f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c3a279 0%,#bf853f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c3a279 0%,#bf853f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c3a279 0%,#bf853f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3a279', endColorstr='#bf853f',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-indigo{
+	color:#fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5f6a86+0,424f6f+100 */
+	background: #5f6a86; /* Old browsers */
+	background: -moz-linear-gradient(top, #5f6a86 0%, #424f6f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f6a86), color-stop(100%,#424f6f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #5f6a86 0%,#424f6f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #5f6a86 0%,#424f6f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #5f6a86 0%,#424f6f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #5f6a86 0%,#424f6f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f6a86', endColorstr='#424f6f',GradientType=0 ); /* IE6-9 */
+}
+
+/*
+############################################################################################################
+*
+*
+* gradient ani
+*
+*
+############################################################################################################
+*/
+@-webkit-keyframes flash {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.gradient-red-ani{
+	border:1px solid #a51818;
+	background: #f54d4d; /* Old browsers */
+	background: -moz-linear-gradient(top, #f54d4d 0%, #c61c1d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f54d4d), color-stop(100%,#c61c1d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f54d4d 0%,#c61c1d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f54d4d 0%,#c61c1d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f54d4d 0%,#c61c1d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f54d4d 0%,#c61c1d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f54d4d', endColorstr='#c61c1d',GradientType=0 ); /* IE6-9 */
+	
+	-webkit-animation-duration: 1s;
+	 animation-duration: 1s;
+	 -webkit-animation-fill-mode: both;
+	 animation-fill-mode: both;
+
+	-webkit-animation-name: flash;
+	animation-name: flash;
+
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+
+
+/*
+############################################################################################################
+*
+*
+* Transition : ( .transition / .transition-delay )
+*
+*
+############################################################################################################
+*/
+
+
+/* 트랜지션은 클래스에 수동으로 부여해서 씀, 모든 엘리먼트에 사용가능 */
+.transition{
+	-webkit-transition: all 300ms ease-in-out !important;
+	-moz-transition: all 300ms ease-in-out !important;
+	transition: all 300ms ease-in-out !important;
+	-o-transition: all 300ms ease-in-out !important;
+	-ms-transition: all 300ms ease-in-out !important;
+}
+.transition-delay{
+	-webkit-transition: all 300ms ease-in-out 130ms;
+	-moz-transition: all 300ms ease-in-out 130ms;
+	-o-transition: all 300ms ease-in-out 130ms;
+	-ms-transition: all 300ms ease-in-out 130ms;
+	transition: all 300ms ease-in-out 130ms;
+}
+
+
+
+

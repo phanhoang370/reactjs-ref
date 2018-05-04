@@ -1,0 +1,54 @@
+/************************************************************************************************************************
+ * 
+ * serpiko-easypiechart.css
+ *
+ * v1.0.2
+ * 
+ * jquery.easypiechart 라이브러리의 css
+ *
+ * author: 허정진 aka. serpiko
+ *	
+ * update: 2016.05.09
+ *
+ *************************************************************************************************************************/ 
+
+@charset "utf-8";
+
+ /* size : 60px 이면 고칠 부분 */
+.pie-chart {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* <== size here */
+  height: 60px; /* <== size here */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius:100%;
+  box-shadow:1px 1px 5px 3px rgba(0,0,0, 0.15); /* h-shadow v-shadow blur spread color */
+}
+.pie-chart.pie-md{
+	width: 70px; /* <== size here */
+	height: 70px; /* <== size here */
+}
+.pie-chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pie-percent {
+  display: inline-block;
+  line-height: 60px; /* <== size here */
+  z-index: 2;
+}
+.pie-chart.pie-md .pie-percent{
+	line-height: 70px;
+	font-size: 1.4em;
+}
+.pie-percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+.pie-chart.pie-md .pie-percent:after{
+	content: '';
+}

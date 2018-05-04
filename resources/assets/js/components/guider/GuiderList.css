@@ -1,0 +1,147 @@
+.add-button{
+    position: fixed!important;
+    bottom: 10px!important;
+    right: 10px!important;
+    z-index:999999
+}
+.content-guider {
+    padding: 25px;
+}
+.guider-add {
+    padding: 25px;
+}
+.title-guider-add {
+    color: #ff4b83;
+    font-size: 26px;
+    font-family: Nanum Gothic Bold;
+}
+.title-guider-add i {
+    margin-right: 10px;
+}
+.main-form {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #d5dee4;
+    padding: 20px;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0, 0.2);
+}
+.form-group {
+    margin:0;
+    border-bottom: 1px dashed #dedede;
+    padding-bottom:15px;
+    padding-top: 15px;
+}
+.title-label {
+    padding-left: 10px;
+    margin: 0;
+    //padding-top: 10px;
+}
+.main-form .form-control {
+    background-color: #f5f5f5;
+    height: 32px !important;
+}
+.main-form .content-hp .item input {
+    width: 100%;
+}
+.main-form .content-hp {
+    position: relative;
+}
+.main-form .content-hp .content-between:before {
+    content: '-';
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    font-size: 20px;
+}
+.main-form .content-hp .content-between:after {
+    content: '-';
+    position: absolute;
+    top: -2px;
+    right: 4px;
+    font-size: 20px;
+}
+.main-form .content-email .content-left{
+    padding: 0 10px 0 0;
+}
+.main-form .content-email .content-right{
+    padding: 0 0px 0 10px;
+}
+.main-form .content-email {
+    position: relative;
+}
+.main-form .content-email .content-right:before{
+   content: '@';
+    font-size: 15px;
+    top: 2px;
+    position: absolute;
+    left:-6px;
+}
+.text-align-center {
+    text-align: center;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+.btn-colorN {
+    background-color: #2d3575;
+    padding:5px 20px;
+    color:#ffffff;
+}
+.btn-colorP {
+    background-color: #ff4b83;
+    padding:5px 20px;
+    color:#ffffff;
+}
+
+.guider-add .main-select .Select-input {
+    height: 32px;
+    background-color: #f5f5f5;
+}
+.guider-add .main-select .Select-control {
+    height: 32px ;
+    background-color: #f5f5f5;
+}
+
+@media only screen and (max-width: 768px) {
+    .plr-mb-0 {
+        padding: 0;
+    }
+    .main-form .content-hp .item {
+        margin: 5px 0;
+    }
+    .main-form .content-hp .content-between:before {
+        content: '-';
+        position: absolute;
+        top: -22px;
+        left: 50%;
+        font-size: 20px;
+    }
+    .main-form .content-hp .content-between:after {
+        content: '-';
+        position: absolute;
+        top: 17px;
+        right:47%;
+        font-size: 20px;
+    }
+    .main-form .content-email .content-left{
+        padding: 15px 0px 0 0;
+    }
+    .main-form .content-email .content-right{
+        padding: 25px 0px 0 0px;
+    }
+    .main-form .content-email .content-right:before{
+        content: '@';
+        font-size: 20px;
+        top: -5px;
+        position: absolute;
+        left: 47%;
+    }
+    .guider-add {
+        padding: 15px;
+    }
+    .main-form {
+        padding: 15px;
+    }
+
+}

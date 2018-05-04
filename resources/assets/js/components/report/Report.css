@@ -1,0 +1,455 @@
+.info-company .main-form .table tbody tr {
+    border-bottom: 1px dashed #dedede;
+}
+
+
+
+.info-company .main-form .table tbody tr th {
+    width: 10%;
+    font-family: Nanum Gothic Bold;
+    border-bottom: 0px;
+    padding: 10px;
+    font-size: 13px;
+    vertical-align: middle;
+    border-top: 0px;
+    font-size: 14px;
+}
+
+.info-company .main-form .table tbody tr td {
+    vertical-align: middle;
+    border-top: 0px;
+    padding: 15px 0px;
+}
+
+.info-company .main-form .table tbody tr td .form-control {
+    background-color: #f5f5f5;
+    border: 1px solid #d4d4d4;
+    height: 28px;
+}
+
+.info-company .main-form .table .table-input div {
+    display: inline-block;
+    margin: 0px;
+}
+
+.info-company .main-form .table .email-input div:last-child {
+    width: 30%;
+}
+
+.info-company .main-form .table .search-address {
+    width: 30%;
+    display: inline-block;
+}
+
+.info-company .main-form .table .btn-address {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.info-company .main-form .table .btn-address .btn {
+    background-color: #ff4b83;
+    color: #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.info-company .main-form .table thead tr th {
+    background-color: #ff4b83;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.info-company .main-form .table tbody tr td {
+    text-align: center;
+    font-size: 13px;
+    padding: 6px;
+}
+
+.info-company .main-form .table tbody .total td {
+    background-color: #ebf1f5;
+}
+
+.info-company .main-form .table tbody .sum td {
+    background-color: #cedfea;
+    font-size: 13px;
+    color: #000;
+}
+
+.info-company .title-info-company {
+    color: #ff4b83;
+    font-size: 26px;
+    font-family: Nanum Gothic Bold;
+    text-align: left;
+}
+
+.info-company .title-info-company span {
+    color: #000000;
+    font-size: 20px;
+    font-family: Nanum Gothic Bold;
+}
+
+.info-company .main-form .search {
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.info-company .main-form .search .search-name {
+    display: inline-block;
+}
+
+.info-company .main-form .search .search-name span i,
+.info-company .main-form .search .search-input span i {
+    padding-right: 5px;
+}
+
+.info-company .main-form .search .search-input {
+    display: inline-block;
+}
+
+.info-company .main-form .search .search-input2 {
+    margin-left: 15px;
+}
+
+.info-company .main-form .search .search-input input,
+.info-company .main-form .search .search-name Select {
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px #ccc solid;
+}
+
+.info-company .main-form .search span {
+    color: #2d3575;
+}
+.info-company .main-form .search #search_btn span {
+    color: #fff;
+}
+.info-company .main-form .search .btn-report {
+    display: inline;
+}
+
+.info-company .main-form .search .btn-report button {
+    padding: 5px 7px;
+    margin-top: 2px;
+    margin-left: 10px;
+    background-color: #2d3575;
+    color: #fff;
+    vertical-align: text-top;
+}
+
+.info-company .main-form .search .search-input .glyphicon {
+    padding: 5px;
+    background-color: #ff4b83;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#ToDatePicker {
+
+}
+
+.search-report .form-control {
+    background-color: #ffffff !important;
+}
+
+.search-report .input-group-text {
+    padding: 3px 0px 6px 35px !important;
+    background-color: #ff4b83;
+}
+
+.search-report .input-group-text .gj-icon {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    font-size: 22px;
+}
+
+.search-report .input-group-text .gj-icon:before {
+    color: #ffffff;
+}
+
+.search-report .gj-datepicker {
+    margin-left: 20px;
+}
+
+.search-report .fromdate {
+    position: relative;
+    margin-right: 20px;
+}
+
+#start-day, #end-day {
+    position: absolute;
+    right: -35px;
+    top: 0;
+    background: #ff4b83;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2px;
+    padding: 0 5px;
+}
+
+.search-report .fromdate button i {
+    color: #ffffff;
+}
+.month-picker>.box {
+    line-height: 1rem !important;
+    background-color: #fff !important;
+}
+.month-picker>.box>label {
+    font-size: 15px !important;
+    padding: 10px;
+}
+.title-admin-time span{
+    vertical-align: sub;
+}
+.title-admin-time span i{
+    vertical-align: sub;
+}
+.month-picker>.box>label>.background-time {
+    position: absolute;
+    right: -30px;
+    top: 5px;
+    background-color: #ff4b83;
+    padding: 5px;
+}
+.month-picker>.box>label>.background-time >i {
+    color:#fff;
+}
+.admin-report .todate {
+    margin-left: 40px !important;
+}
+.admin-report .todate:before {
+    left: -20px !important;
+    top: 5px;
+}
+
+.search-report .todate {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+.search-report .todate:before {
+    content:'~';
+    position: absolute;
+    font-size: 17px;
+    left: 4px;
+}
+.search-report .todate #end-day {
+    position: absolute;
+    right: -35px;
+    top: 0;
+    background: #ff4b83;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2px;
+}
+
+.search-report .todate button i {
+    color: #ffffff;
+}
+
+.react-datepicker-wrapper {
+    margin-left: 20px;
+}
+
+.search-input .title-search {
+    padding-right: 20px;
+}
+.main-table-report {
+    min-height: 170px;
+}
+.search-report .btn-report {
+    padding-left: 10px;
+}
+@media only screen and (max-width: 1260px) {
+    .search-report .search-input {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .admin-report .todate {
+        margin-left: 20px !important;
+    }
+    .admin-report .fromdate {
+        margin-left: 20px !important;
+    }
+    .info-company .main-form .search .search-input2 {
+        margin-left: 0;
+    }
+    .search-report .fromdate {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .search-report .fromdate .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    .search-report .fromdate .react-datepicker-wrapper .react-datepicker__input-container {
+        width: 100%;
+    }
+
+    .search-report .fromdate .react-datepicker-wrapper .react-datepicker__input-container input {
+        width: 95%;
+    }
+    .search-report .todate:before {
+        content:'';
+    }
+    .search-report .todate {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        width: 100%;
+        margin-right: 20px;
+    }
+    .search-report .todate .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    .search-report .todate .react-datepicker-wrapper .react-datepicker__input-container {
+        width: 100%;
+    }
+
+    .search-report .todate .react-datepicker-wrapper .react-datepicker__input-container input {
+        width: 95%;
+    }
+
+}
+@media only screen and (max-width: 1160px) {
+    .pt-10-ipad  {
+        padding-top: 10px;
+    }
+    .info-company .main-form .search .btn-report button {
+        padding: 6px 7px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .info-company .main-form .search .btn-report button {
+        padding: 6px 7px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .search-report .gj-datepicker {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    #start-day, #end-day {
+        right: -25px;
+    }
+    .admin-report .todate {
+        margin-left: 0px !important;
+    }
+    .admin-report .fromdate {
+        margin-left: 0px !important;
+    }
+    .search-report .todate #end-day {
+        right: -25px;
+    }
+
+    .search-report .search-input {
+        margin-left: 0 !important;
+        margin-top: 15px;
+        padding-left: 0;
+    }
+
+    .info-company .main-form .search .btn-report button {
+        padding: 3px 7px;
+        margin-top: 2px;
+        margin-left: 0px;
+        background-color: #2d3575;
+        color: #fff;
+    }
+
+    .btn-report {
+        margin-top: 15px;
+    }
+
+    .search-report .search-input {
+        display: block;
+        width: 100%;
+    }
+
+    .search-report .fromdate {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .react-datepicker-wrapper {
+        margin-left: 0;
+    }
+
+    .search-report .fromdate .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    .search-report .fromdate .react-datepicker-wrapper .react-datepicker__input-container {
+        width: 100%;
+    }
+
+    .search-report .fromdate .react-datepicker-wrapper .react-datepicker__input-container input {
+        width: 95%;
+    }
+
+    .search-report .fromdate button {
+        right: -20px;
+    }
+
+    .search-report .todate {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .search-report .todate .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    .search-report .todate .react-datepicker-wrapper .react-datepicker__input-container {
+        width: 100%;
+    }
+
+    .search-report .todate .react-datepicker-wrapper .react-datepicker__input-container input {
+        width: 95%;
+    }
+
+    .search-report .todate button {
+        right: -20px;
+    }
+
+    .search-report .todate:before {
+        content:'';
+    }
+
+    .search-report .search-input .title-search {
+        display: block;
+    }
+
+    .search-report .search-input input {
+        width: 100%;
+    }
+
+    .search-report .search-input {
+        margin-top: 0px;
+    }
+    .search-report .btn-report {
+        margin-top:5px;
+    }
+
+}
+
+.search-input2 .Select{
+    display: inline-flex!important;
+    width: 200px!important;
+}
+
+.search-input2 .Select-input input {
+   border: none!important;
+}

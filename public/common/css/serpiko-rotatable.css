@@ -1,0 +1,35 @@
+/************************************************************************************************************************
+ * 
+ * serpiko-rotatable.css
+ *
+ * v1.0.2
+ * 
+ * jquery.ui.rotatable 라이브러리의 핸들 클래스
+ *
+ * author: 허정진 aka. serpiko
+ *	
+ * update: 2016.11.08
+ *
+ *************************************************************************************************************************/ 
+
+/* 커스텀으로 추가한 클래스 */
+.ui-rotatable-custom{
+	cursor: pointer;
+	color: #FF9900;
+	text-shadow:1px 1px 0 #444;
+	position: absolute;
+	top:-10px;
+	left:-17px;
+}
+
+
+/* 기본 제공핸들 */
+.ui-rotatable-handle {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-image: url(../images/rotate/rotate.png);
+    background-size: 100%;
+    left: 2px;
+    bottom: 2px;
+}

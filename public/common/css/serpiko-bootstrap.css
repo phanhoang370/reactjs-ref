@@ -1,0 +1,62 @@
+/************************************************************************************************************************
+ * 
+ * serpiko-bootstrap.css
+ *
+ * v1.2.2
+ * 
+ * bootstrap 프레임워크 css.
+ *
+ * author: 허정진 aka. serpiko
+ *	
+ * update: 2017.03.09
+ *
+ *************************************************************************************************************************/ 
+
+@charset "UTF-8";
+
+/* dropdown : 드롭다운 메뉴 속성, 애니메이션 */
+.dropdown-menu {
+	border: 0;
+	margin: 0;
+	font-size: 12px;
+	background: rgba(255,255,255,0.85);
+	margin-top: -1px;
+	overflow: hidden;
+	color: #000;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.dropdown-menu:not(.animated) {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+.dropdown-menu > li > a:hover{
+    background: rgba(0, 0, 0, 0.14);
+    color: #000;
+}
+
+
+
+/* bootstrap-datetimepicker-widget : 달력 폰트 교체 */
+.bootstrap-datetimepicker-widget a[data-action] {
+  padding: 6px 0;
+  color: #333;
+}
+
+/* bootstrap-datetimepicker-widget : 달력 셀렉트 active 배경색 */
+.datepicker table.table-condensed tr td.active{background-color:#337AB7 !important}
+
+
+
+.tooltip {
+    position: fixed;
+	z-index:210000000;
+}
+.tooltip-inner {
+	word-break: keep-all;
+}

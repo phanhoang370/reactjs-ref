@@ -1,0 +1,33 @@
+/************************************************************************************************************************
+ * 
+ * serpiko-totop.css
+ *
+ * v1.0.2
+ * 
+ * totop 라이브러리의 박스 엘리먼트
+ *
+ * author: 허정진 aka. serpiko
+ *	
+ * update: 2016.05.09
+ *
+ *************************************************************************************************************************/ 
+
+@charset "utf-8";
+
+#toTop {
+	border: none;
+	bottom: 60px;
+	display: none;
+	height: 51px;
+	overflow: hidden;
+	position: fixed;
+	right: 13px;
+	text-decoration: none;
+	text-indent: 100%;
+	width: 51px;
+	z-index: 100;
+}
+#toTop {
+	background: #2790B0 url('../images/totop.png') top left no-repeat;
+}
+/*	/toTop	*/
